@@ -11,6 +11,11 @@ If you have any questions about these project or this repository, please email [
 ```
 .
 ├── AMIB
+│   └── AMIB_persons.csv
+│   └── AMIB_daily.csv
+│   └── AMIB_daily2.csv
+│   └── AMIB_interaction.csv
+│   └── AMIB_interaction2.csv
 ├── The Cortisol Data
 ```
 
