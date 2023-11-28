@@ -15,8 +15,7 @@ If you have any questions about these project or this repository, please email [
 ```
 
 
-| [AMIB](https://github.com/The-Change-Lab/collaborations/tree/main/AMIB) |
-|:----|
+## [AMIB](https://github.com/The-Change-Lab/collaborations/tree/main/AMIB)
 The AMIB Data, collected as part of a multiple time-scale study, are useful for illustrating a variety of methods for modeling of i
 ntensive longitudinal data. The data include person-level *dispositions*, *daily* diary assessments, and 
 ecological momentary assessments that were obtained after everyday social *interactions* (event-contingent sampling).       
@@ -37,6 +36,5 @@ We are happy to engage collaboration around a similar data set that is larger (i
 Cheers,     
 Nilam, David, Aaron
 
-| [THE CORTISOL DATA](https://github.com/The-Change-Lab/affectivedynamics/tree/main/code) |
-|:----|
-| The `data` folder contains cleaned data files of anonimized human image raitings and machine raitings.
+## [The Cortisol Data](https://github.com/The-Change-Lab/affectivedynamics/tree/main/code)
+ The `data` folder contains cleaned data files of anonimized human image raitings and machine raitings.
