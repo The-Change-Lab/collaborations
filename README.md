@@ -17,7 +17,7 @@ If you have any questions about these project or this repository, please email [
 
 | [AMIB](https://github.com/The-Change-Lab/collaborations/tree/main/AMIB) |
 |:----|
-| The AMIB Data, collected as part of a multiple time-scale study, are useful for illustrating a variety of methods for modeling of i
+The AMIB Data, collected as part of a multiple time-scale study, are useful for illustrating a variety of methods for modeling of i
 ntensive longitudinal data. The data include person-level *dispositions*, *daily* diary assessments, and 
 ecological momentary assessments that were obtained after everyday social *interactions* (event-contingent sampling).       
 
