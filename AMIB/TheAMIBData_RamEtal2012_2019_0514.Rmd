@@ -1,0 +1,130 @@
+---
+title: "The AMIB Data - A Multiple Time-Scale Experience Sampling Study"
+author: "Ram et al"
+output: 
+  rmdformats::robobook:
+    toc_depth: 3
+    gallery: TRUE
+    lightbox: TRUE
+editor_options: 
+  chunk_output_type: console
+---
+
+# Overview
+The AMIB Data, collected as part of a multiple time-scale study, are useful for illustrating a variety of methods for modeling of intensive longitudinal data. The data include person-level *dispositions*, *daily* diary assessments, and ecological momentary assessments that were obtained after everyday social *interactions* (event-contingent sampling).       
+
+The data are shared with intent to facilitate learning about analysis of *intensive longitudinal data* (from experience sampling, daily diary, or EMA designs). **The data are posted only for teaching purposes and should not be used for research.**  
+
+Use requires citation and acknowledgement of both this website and the following paper:
+
+Ram, N., Conroy, D. E., Pincus, A. L., Hyde, A. L., & Molloy, L. E. (2012). Tethering theory to method: Using measures of intraindividual variability to operationalize individuals' dynamic characteristics. In G. Hancock & J. Harring (Eds.), *Advances in longitudinal methods in the social and behavioral sciences* (pp. 81-110). New York: Information Age.     
+
+Please contact us with questions about the data and their use. We always appreciate knowing how the data are being used to facilitate learning and teaching. If you find something interesting, please let us know - we are happy to engage collaboration around a similar data set that is larger (in terms of both persons and occasions). 
+
+Cheers,     
+Nilam, David, Aaron
+
+## Outline
+
+This script covers:
+
+A. Loading The AMIB Data     
+B. Describing The AMIB Data     
+C. Describing The AMIB Data - PHASE 2
+
+
+## Preliminaries
+
+Loading libraries used in this script.
+
+```{r library, message=FALSE}
+library(psych)
+```
+
+# A. Loading the AMIB Data 
+
+Loading the public data. 
+
+There are 3 main data files - a person-level file, a day-level file, and an interaction-level file (that can be merged easily using the *id* and *day* variables). 
+
+Loading person-level file (*N* = 190)
+```{r person file}
+#set filepath for data file
+filepath <- "https://raw.githubusercontent.com/LRI-2/Data/main/ILD/AMIBshare_persons_2019_0501.csv"
+#read in the .csv file using the url() function
+AMIB_persons <- read.csv(file=url(filepath),header=TRUE)
+```
+
+Loading day-level file (*T* = 8, *day* = 0 to 7).
+```{r day file}
+#set filepath for data file
+filepath <- "https://raw.githubusercontent.com/LRI-2/Data/main/ILD/AMIBshare_daily_2019_0501.csv"
+#read in the .csv file using the url() function
+AMIB_daily <- read.csv(file=url(filepath),header=TRUE)
+```
+
+Loading interaction-level file (*T* = many, on average 43 per person).
+```{r interaction file}
+#set filepath for data file
+filepath <- "https://raw.githubusercontent.com/LRI-2/Data/main/ILD/AMIBshare_interaction_2019_0501.csv"
+#read in the .csv file using the url() function
+AMIB_interaction <- read.csv(file=url(filepath),header=TRUE)
+```
+
+At Study Day 5 a subset of highly compliant participants were invited to participate for an additional 2 weeks (see details in Ram et al., 2012). These supplemental assessments are useful for a variety of analyses that might require longer time series (e.g., reliability, p-technique, etc.)
+
+The "Phase 2" data are organized in two files - a day-level file, and an interaction-level file (that can be merged easily using the *id* and *day* variables).
+
+Loading the Phase 2 day-level file (*T* = 22, *day* = 0 to 21).
+```{r phase 2 day file}
+#set filepath for data file
+filepath <- "https://raw.githubusercontent.com/LRI-2/Data/main/ILD/AMIBshare_phase2_daily_2019_0501.csv"
+#read in the .csv file using the url() function
+AMIB_dailyP2 <- read.csv(file=url(filepath),header=TRUE)
+```
+
+Loading interaction-level file (*T* = many, 43 assessments per person, on average).
+```{r interaction phase 2 file}
+#set filepath for data file
+filepath <- "https://raw.githubusercontent.com/LRI-2/Data/main/ILD/AMIBshare_phase2_interaction_2019_0501.csv"
+#read in the .csv file using the url() function
+AMIB_interactionP2 <- read.csv(file=url(filepath),header=TRUE)
+```
+
+# B. Describing The AMIB Data    
+
+Basic descriptives of the N = 190 person-level data.
+```{r}
+#means, sd, etc.
+describe(AMIB_persons)
+```
+
+Basic descriptives of the N = 190 day-level data.
+```{r}
+#means, sd, etc.
+describe(AMIB_daily)
+```
+
+Basic descriptives of the N = 184 interaction-level data.
+```{r}
+#means, sd, etc.
+describe(AMIB_interaction)
+```
+
+# C. Describing The AMIB Data - PHASE 2
+
+Basic descriptives of the N = 30 PHASE 2 day-level data.
+```{r}
+#means, sd, etc.
+describe(AMIB_dailyP2)
+```
+
+Basic descriptives of the N = 30 PHASE 2 interaction-level data.
+```{r}
+#means, sd, etc.
+describe(AMIB_interactionP2)
+```
+
+We shall eventually provide more detailed code-book information here. In the mean time, please feel free to contact Nilam for details about the variables and coding. 
+
+**Thanks for playing!**
