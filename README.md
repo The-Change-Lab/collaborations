@@ -16,6 +16,10 @@ If you have any questions about these project or this repository, please email [
 │   └── AMIB_daily2.csv
 │   └── AMIB_interaction.csv
 │   └── AMIB_interaction2.csv
+├── Bolger_Laurenceau_2013
+│   └── BL2013_data_categorical.csv
+│   └── BL2013_data_intimacy.csv
+│   └── BL2013_data_process.csv
 ├── Growth Modeling
 ├── The Cortisol Data
 │   └── TheCortisolData.csv
@@ -42,6 +46,20 @@ We are happy to engage collaboration around a similar data set that is larger (i
 
 Cheers,     
 Nilam, David, Aaron
+
+## [Bolger & Laurenceau 2013](https://github.com/The-Change-Lab/collaborations/tree/main/Bolger_Laurenceau_2013)
+Use requires citation and acknowlegement of:
+
+Bolger, N., & Laurenceau, J.-P. (2013). _Intensive longitudinal methods: An introduction to diary and experience sampling research_. Guilford Press.
+
+## [Growth Modeling](https://github.com/The-Change-Lab/collaborations/tree/main/GrowthModeling)
+Growth models are among the core methods for analyzing how and when people change. Discussing both structural equation and multilevel modeling approaches, Grimm, Ram & Estabrook (2016) leads readers step by step through applying each model to longitudinal data to answer particular research questions. It demonstrates cutting-edge ways to describe linear and nonlinear change patterns, examine within-person and between-person differences in change, study change in latent variables, identify leading and lagging indicators of change, evaluate co-occurring patterns of change across multiple variables, and more. User-friendly features include real data examples, code (for Mplus or NLMIXED in SAS, and OpenMx or nlme in R), discussion of the output, and interpretation of each model's results.
+
+Tutorials can be found at: https://thechangelab.stanford.edu/tutorials/growth-modeling/
+
+Use requires citation and acknowlegement of:
+
+Grimm, K. J., Ram, N., & Estabrook, R. (2016). _Growth Modeling: Structural Equation and Multilevel Modeling Approaches. Guilford Publications_. https://books.google.com/books?id=MLW_CwAAQBAJ
 
 ## [The Cortisol Data](https://github.com/The-Change-Lab/collaborations/tree/main/TheCortisolData)
 The Cortisol Data is an N = 34, T = 9 time points data set we have used to illustrate a variety of growth modeling and mixture modeling methods. 
